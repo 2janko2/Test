@@ -1,0 +1,23 @@
+.wrapper {
+  height: 20px;
+  width: 18px;
+  background: url(../../../assets/img/copy.svg) no-repeat;
+  background-size: contain;
+  position: relative;
+  cursor: pointer;
+  &_active {
+    &::before {
+      content: "Copied";
+      position: absolute;
+      top: -50px;
+      right: -78px;
+      padding: 8px 10px;
+      font-size: 14px;
+      background: #ffff;
+      color: black;
+      z-index: 99;
+      box-shadow: 0 3px 6px -4px rgb(0 0 0 / 12%), 0 6px 16px 0 rgb(0 0 0 / 8%),
+        0 9px 28px 8px rgb(0 0 0 / 5%);
+    }
+  }
+}

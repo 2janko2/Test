@@ -1,0 +1,207 @@
+.wrapper {
+    border: 1px solid rgba(204, 201, 201, 0.58);
+    border-radius: 5px;
+    background-color: #ffffff;
+    margin: 20px 0;
+}
+
+.titleWrapper {
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    @media (max-width: 767px) {
+        padding: 20px 15px;
+    }
+
+    &_verified {
+        padding-bottom: 0;
+    }
+}
+
+.pagenumber {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #1e3799;
+    color: #1e3799;
+    line-height: 1;
+    margin-right: 16px;
+    &_inactive {
+        color: grey;
+        border-color: grey;
+    }
+    &_verified {
+        font-size: 0;
+        border-color: #06b576;
+        color: #06b576;
+        border-color: #06b576;
+        background: #06b576 url("../../../assets/img/check.svg") no-repeat
+            center center;
+        background-size: 60% auto;
+    }
+}
+
+.title {
+    color: #1e3799;
+    font-size: 18px;
+    margin: 0;
+    &_inactive {
+        color: grey;
+    }
+}
+
+.dnsStatusChecked {
+    color: #06b576;
+    font-size: 16px;
+    font-weight: 600;
+    padding-left: 72px;
+    margin-bottom: 25px;
+    @media (max-width: 767px) {
+        padding-left: 59px;
+    }
+}
+
+.description {
+    color: #4a4a4a;
+    font-size: 14px;
+    padding: 10px 74px 0;
+    font-weight: 500;
+    line-height: 19px;
+    @media (max-width: 767px) {
+        padding: 10px 59px 0;
+    }
+    @media (max-width: 480px) {
+        padding: 10px 15px 0;
+    }
+}
+
+.dns {
+    border: 1px solid #d0d0d0;
+    border-radius: 8px;
+    padding: 10px 25px;
+    margin: 20px 74px 30px;
+    @media (max-width: 767px) {
+        margin: 20px 59px 30px;
+    }
+    @media (max-width: 480px) {
+        margin: 20px 15px 30px;
+        padding: 10px 15px;
+    }
+}
+
+.dnsField {
+    position: relative;
+    margin: 16px 0;
+}
+
+.fieldLabel {
+    color: #4a4a4a;
+    font-weight: bold;
+}
+
+.fieldLabelText {
+    margin-right: 8px;
+}
+
+.fieldValue {
+    color: #9b9b9b;
+    font-size: 14px;
+    overflow-wrap: break-word;
+    max-width: 400px;
+}
+
+.copyWrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.dnsButton {
+    display: flex;
+    justify-content: center;
+}
+
+.dnsVerifyButton {
+    height: 50px;
+    width: 234px;
+    font-size: 16px;
+}
+
+.instructions {
+    display: flex;
+    justify-content: center;
+    padding: 22px 0 30px;
+    align-items: center;
+    @media (max-width: 480px) {
+        flex-direction: column;
+    }
+}
+
+.instructionsImg {
+    background: url(../../../assets/img/instructions.svg) no-repeat;
+    background-size: cover;
+    margin-right: 12px;
+    height: 24px;
+    width: 32px;
+    cursor: pointer;
+}
+
+.instructionsText {
+    margin-top: 7px;
+    color: #1fd1a1;
+    font-size: 16px;
+    font-style: italic;
+    text-align: center;
+    cursor: pointer;
+    @media (max-width: 480px) {
+        max-width: 240px;
+    }
+}
+
+.notification {
+    margin: 18px 34px;
+    padding: 0 34px;
+    border-radius: 8px;
+    background-color: rgba(208, 2, 27, 0.11);
+}
+
+.notificationContent {
+    padding: 14px 0;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.notificationWarning {
+    width: 54px;
+    height: 32px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 2px solid #d0021b;
+    color: #d0021b;
+    line-height: 1;
+    margin-right: 16px;
+}
+
+.notificationText {
+    color: #4a4a4a;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 19px;
+    text-align: left;
+    font-weight: 500;
+}
+
+.dkimHelp {
+    border-top: 1px solid #e5e3e3;
+    background-color: rgba(245, 244, 244, 0.58);
+    padding: 24px;
+    padding: 32px 70px 32px 70px;
+}

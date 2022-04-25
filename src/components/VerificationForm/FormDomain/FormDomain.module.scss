@@ -1,0 +1,110 @@
+.wrapper {
+    border: 1px solid rgba(204, 201, 201, 0.58);
+    border-radius: 5px;
+    background-color: #ffffff;
+    padding: 30px 30px;
+    margin: 20px 0;
+    @media (max-width: 767px) {
+        padding: 20px 15px;
+    }
+}
+
+.titleWrapper {
+    display: flex;
+}
+
+.pagenumber {
+    width: 28px;
+    height: 28px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #1e3799;
+    color: #1e3799;
+    line-height: 1;
+    margin-right: 16px;
+    &_verified {
+        font-size: 0;
+        border-color: #06b576;
+        background: #06b576 url("../../../assets/img/check.svg") no-repeat
+            center center;
+        background-size: 60% auto;
+    }
+}
+
+.title {
+    margin-bottom: 0;
+    color: #1e3799;
+    font-size: 18px;
+}
+
+.domainWrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.domain {
+    font-weight: bold;
+    font-size: 16px;
+    color: #4a4a4a;
+    padding-left: 44px;
+    word-break: break-all;
+    @media (max-width: 480px) {
+        padding-left: 0;
+        margin-top: 4px;
+    }
+}
+
+.editBtn {
+    margin-top: -28px;
+    font-size: 14px;
+    font-weight: 500;
+    @media (max-width: 480px) {
+        min-width: unset;
+        padding: 8px 16px;
+    }
+}
+
+.form {
+    padding-left: 72px;
+    @media (max-width: 767px) {
+        padding-left: 44px;
+    }
+    @media (max-width: 480px) {
+        padding-left: 0;
+    }
+}
+
+.inputLabel {
+    color: #4a4a4a;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 19px;
+    margin-bottom: 8px;
+    padding-top: 18px;
+}
+
+.inputWrapper {
+    display: flex;
+    max-width: 448px;
+    @media (max-width: 480px) {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+.input {
+    margin-right: 8px;
+    flex-grow: 1;
+    @media (max-width: 480px) {
+        margin-bottom: 16px;
+        margin-right: 0;
+    }
+}
+
+.submitWrapper {
+    @media (max-width: 480px) {
+        margin-bottom: 0;
+    }
+}
